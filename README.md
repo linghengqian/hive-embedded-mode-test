@@ -1,6 +1,6 @@
 ## hive-embedded-mode-test
 
-- For https://github.com/apache/shardingsphere/issues/29052 .
+- For https://github.com/apache/shardingsphere/issues/29052 and https://issues.apache.org/jira/browse/HIVE-28295 .
 
 - Verified under Ubuntu 22.04.4 and `SDKMAN!`.
 
