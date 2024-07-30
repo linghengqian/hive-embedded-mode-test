@@ -21,9 +21,9 @@ public class HiveTest {
              Connection connection = hikariDataSource.getConnection();
              Statement statement = connection.createStatement()) {
             String tableName = "testHiveDriverTable";
-            statement.execute("drop table if exists %s".formatted(tableName));
-            statement.execute("create table %s (key int, value string)".formatted(tableName));
-            String sql = "show tables '%s'".formatted(tableName);
+            statement.execute("drop table if exists " + tableName);
+            statement.execute("create table " + tableName + " (key int, value string)");
+            String sql = "show tables '" + tableName + "'";
             ResultSet resultSet = statement.executeQuery(sql);
             if (resultSet.next()) {
                 System.out.println(resultSet.getString(1));
